@@ -11,15 +11,13 @@ Predicting the landing outcomes of SpaceX Falcon 9 first stage rocket boosters.
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Data Collection](#Data-Collection-Using-SpaceX-API)
-- [Data Wrangling ]
-- [Data Visulization]
-- [Web-Scraping From Wikipedia]
+- [Data Collection](#tata-collection)
+- [Data Wrangling](#data-wrangling)
+- [Data Visulization](#data-visulization)
 - [Exploratory Data Analysis](#exploratory-data-analysis)
-- [EDA with SQL]
+- [EDA with SQL](#eda-with-sql)
 - [Machine Learning](#machine-learning)
 - [Evaluation](#evaluation)
-- [Usage](#usage)
 - [Acknowledgments](#acknowledgments)
 
 ## About
@@ -28,7 +26,7 @@ This project aim to predict if the Falcon 9 first stage will land successfully. 
 
 ## Dataset
 
-The dataset used for this project contains information about SpaceX Falcon 9 rocket launches, including details about the launch site, landing outcomes, payload, and more. The dataset is available in [data.csv](data.csv).
+The dataset used for this project contains information about SpaceX Falcon 9 rocket launches, including details about the launch site, landing outcomes, payload, and more. The dataset is available in dataset_part_1.csv, dataset_part2.csv, and feature_one_hot.csv
 
 ## Getting Started
 
@@ -39,15 +37,34 @@ Follow these instructions to get a copy of the project up and running on your lo
 Make sure you have the following software/tools installed:
 
 - Python (3.7 or higher)
-- Jupyter Notebook (for data analysis)
+- Jupyter Notebook/Visual Studio(IDE)
+- pandas(for data analysis)
+- NumPy(for data analysis)
+- Matplotlib, Folium, and Seaborn(Data Visulization)
+- Requests(to make HTTP requests)
+- sqlite3(to connect to database)
 - scikit-learn (for machine learning)
 
 ### Installation
 
 1. Clone the repository:
-
 2. Install the required Python packages:
-   pip install -r requirements.txt
+   use !pip or !mamba python package managers to install the required libraries .
+
+## Data Collection
+
+Collect data using SpaceX API and Web-Scraping from Wikipedea.
+
+## Data Wrangling
+
+In this part of the project, we performed the following tasks:
+
+1. Performed data wrangling(clean/format the data)
+2. Made data ready for model training(performed one-hot-encoding)
+
+## Data Visulization
+
+Visulize insights using matplotlib and folium.
 
 ## Exploratory Data Analysis
 
@@ -61,10 +78,6 @@ Build and train machine learning models to predict landing outcomes. The project
 
 Evaluate the performance of machine learning models using appropriate metrics. Compare and select the best model for predicting SpaceX Falcon 9 first stage landing outcomes.
 
-## Usage
-
-Explain how users can use the project for their own analysis or predictions. Provide instructions and examples if needed.
-
 ## Contributing
 
 If you'd like to contribute to this project, follow these steps:
@@ -74,10 +87,6 @@ If you'd like to contribute to this project, follow these steps:
 3. Commit your changes (`git commit -m 'Add feature'`)
 4. Push to the branch (`git push origin feature`)
 5. Open a pull request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
